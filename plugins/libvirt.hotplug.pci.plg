@@ -1,11 +1,11 @@
 <?xml version='1.0' standalone='yes'?>
 
 <!DOCTYPE PLUGIN [
-<!ENTITY name      "libvirt.hotplug.usb">
+<!ENTITY name      "libvirt.hotplug.pci">
 <!ENTITY author    "Burhan/bshakil">
 <!ENTITY version   "2016.03.13">
 <!ENTITY launch    "VMs">
-<!ENTITY pluginURL "https://raw.githubusercontent.com/bshakil/unraid-libvirt-usbhotplug/master/plugins/libvirt.hotplug.usb.plg">
+<!ENTITY pluginURL "https://raw.githubusercontent.com/bshakil/unraid-libvirt-pcihotplug/master/plugins/libvirt.hotplug.pci.plg">
 <!ENTITY source    "/boot/config/plugins/&name;/&name;">
 <!ENTITY MD5       "2aecacfc629000fc1684a6962e3d7177">
 ]>
@@ -55,7 +55,7 @@ fi
 
 <!-- SOURCE PACKAGE -->
 <FILE Name="&source;.txz" Run="upgradepkg --install-new --reinstall">
-	<URL>https://github.com/bshakil/unraid-libvirt-usbhotplug/raw/master/archive/&name;.txz</URL>
+	<URL>https://github.com/bshakil/unraid-libvirt-pcihotplug/raw/master/archive/&name;.txz</URL>
 <MD5>&MD5;</MD5>
 </FILE>
 
