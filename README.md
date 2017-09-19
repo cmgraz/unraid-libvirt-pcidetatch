@@ -1,3 +1,3 @@
-**Libvirt Hotplug USB**
+**Libvirt Detach GPU**
 
-Unraid Plugin for Hot-plugging USB Devices to Running VMs. Libvirt Hotplug USB allows mounting of USB Devices (e.g. Keyboard, Mouse, iPhone, FlashDrive etc) on running VMs. It uses virsh to attach the Devices which avoids Conflicts between different VMs. 
+This is a branch of the Libvirt hotplug USB plugin.  This plugin is meant to detatch PCI devices, specifically GPUs before killing a VM.  Many AMD GPUs do not properly shutdown when the VM is killed, creating issues for future use.
